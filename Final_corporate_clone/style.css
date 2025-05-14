@@ -1,0 +1,282 @@
+* {
+    margin :0;
+    padding :0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/* Nav bar styling*/
+.navbar{
+    background-color:#222;
+    color: white;
+    padding:10px 0;
+}
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1100px;
+    margin: auto;
+    padding:0 20px;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6); /* dull white like nav-links */
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+.logo a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.logo:hover {
+  color: #fff; /* bright white on hover */
+  background-color: rgba(255, 255, 255, 0.15); /* hover background effect */
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap: 20px;
+    position:relative;
+}
+/* Default link style in navbar */
+.nav-links a {
+  color: rgba(255, 255, 255, 0.6); /* dull white */
+  padding: 8px 12px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  color: #fff; /* bright white */
+  background-color: rgba(255, 255, 255, 0.15); /* subtle button-like effect */
+}
+
+.nav-links li{
+    position:relative;
+}
+.drop-down {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background: #444;
+  padding: 10px;
+  border-radius: 4px;
+}
+.drop-down li {
+  margin: 5px 0;
+}
+.drop-down a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+.nav-links li:hover .drop-down {
+  display: block;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  gap: 5px;
+}
+
+.search-box input {
+  padding: 5px;
+}
+
+.search-box button {
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+/* Jumbotron */
+.Jumpotron {
+  background-color: #a7cf5c;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Jumpotron h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.Jumpotron p {
+  color: #e8f6cc;
+  margin: 10px 0 20px;
+}
+
+.jumpo-button {
+  background-color: #0033cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 20px;
+
+}
+.cards-section{
+    text-align:center;
+    padding: 50px 20px;
+    background-color:#fff;
+
+}
+.cards-heading{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+.cards-heading .subheading{
+    font-weight:normal;
+    color:#666;
+    font-size: 1.2rem;
+}
+.cards-description{
+    max-width: 900 px;
+    margin:10 px auto 40 px;
+    color:#555;
+    font-size: 0.95rem;
+}
+.cards-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 40px;
+    justify-items: center;
+}
+.card{
+    max-width:700px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #2c6eb7;
+  text-decoration: none; /* Ensure default is no underline */
+  transition: text-decoration 0.3s ease;
+}
+.card h3:hover{
+  text-decoration:underline;
+}
+
+.card p {
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 0.95rem;
+  color: #555;
+}
+.image-placeholder {
+  background: #e0e0e0;
+  width: 100%;
+  height: 170px;
+  line-height: 170px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #aaa;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.Flexcard-section{
+    background-color: #c69e36;
+    padding: 60px 20px;
+}
+.Flexcard-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+    max-width: 1200px;
+    margin:0 auto;
+    flex-wrap:wrap;
+}
+.Flexcard{
+    background-color:#c69e36;
+    text-align:center;
+    max-width: 300px;
+    padding: 20px;
+
+}
+
+.Flexcard h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.Flexcard p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.Flexcard button {
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.circle-placeholder{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-color:white;
+    color:gray;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    margin: auto;
+    box-shadow:0 0 5px rgba(0,0,0,0.1)
+}
+footer{
+    text-align:center;
+    padding: 20px;
+    background-color:white;
+    font-size: 14px;
+    color: gray;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color: #2c6eb7;
+    margin: 0 10px;
+
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+.footer-copy{
+    margin-top: 10px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
